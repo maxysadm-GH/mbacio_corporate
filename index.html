@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MBACIO - IT Consulting & Cybersecurity Solutions</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafbfc;
+            color: #1a202c;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .redirect-container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #112d4e;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            color: #4a5568;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+        }
+        
+        .page-list {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .page-link {
+            display: block;
+            padding: 1rem 1.5rem;
+            background: #112d4e;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+            transform: scale(1);
+        }
+        
+        .page-link:hover {
+            background: #1a4578;
+            transform: scale(1.02);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .auto-redirect {
+            color: #4a5568;
+            font-size: 0.875rem;
+            margin-top: 1.5rem;
+        }
+        
+        .loading-bar {
+            width: 100%;
+            height: 4px;
+            background: #e2e8f0;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+        
+        .loading-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #112d4e, #facf39);
+            border-radius: 2px;
+            animation: loading 3s ease-out forwards;
+        }
+        
+        @keyframes loading {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .page-link {
+                transition: none;
+            }
+            .page-link:hover {
+                transform: none;
+            }
+            .loading-progress {
+                animation: none;
+                width: 100%;
+            }
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmbaciocor9664back.builtwithrocket.new&_v=0.1.2"></script>
+</head>
+<body>
+    <div class="redirect-container">
+        <div class="logo">MBACIO</div>
+        <div class="subtitle">IT Consulting & Cybersecurity Solutions</div>
+        
+        <div class="page-list">
+            <a href="pages/homepage.html" class="page-link">Homepage</a>
+            <a href="pages/services_detail.html" class="page-link">Services Detail</a>
+            <a href="pages/pricing_comparison.html" class="page-link">Pricing Comparison</a>
+            <a href="pages/cyber_risk_assessment.html" class="page-link">Cyber Risk Assessment</a>
+            <a href="pages/automation_roi_calculator.html" class="page-link">Automation ROI Calculator</a>
+            <a href="pages/contact_consultation_booking.html" class="page-link">Contact & Consultation Booking</a>
+        </div>
+        
+        <div class="auto-redirect">
+            Automatically redirecting to homepage in 3 seconds...
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-redirect to homepage after 3 seconds
+        setTimeout(function() {
+            window.location.href = 'pages/homepage.html';
+        }, 3000);
+        
+        // Add click tracking for manual navigation
+        document.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Allow normal navigation
+                console.log('Navigating to:', this.href);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>

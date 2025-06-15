@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Risk Assessment - MBACIO Corporate</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Take our free 5-question cyber risk assessment to identify security vulnerabilities and get personalized recommendations for your business." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmbaciocor9664back.builtwithrocket.new&_v=0.1.2"></script>
+</head>
+<body class="bg-background font-sans">
+    <!-- Fixed Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-surface shadow-soft z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-accent to-accent-600 rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div class="text-2xl font-bold font-poppins">
+                        <span class="bg-gradient-to-r from-accent to-accent-600 bg-clip-text text-transparent">MBACIO</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="services_detail.html" class="text-text-secondary hover:text-primary transition-colors">Services</a>
+                    <a href="pricing_comparison.html" class="text-text-secondary hover:text-primary transition-colors">Pricing</a>
+                    <a href="cyber_risk_assessment.html" class="text-primary font-medium">Risk Assessment</a>
+                    <a href="automation_roi_calculator.html" class="text-text-secondary hover:text-primary transition-colors">ROI Calculator</a>
+                    <a href="contact_consultation_booking.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:block">
+                    <a href="contact_consultation_booking.html" class="btn-primary">Book Consultation</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden mt-4 pb-4 border-t border-border" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="services_detail.html" class="text-text-secondary hover:text-primary transition-colors">Services</a>
+                    <a href="pricing_comparison.html" class="text-text-secondary hover:text-primary transition-colors">Pricing</a>
+                    <a href="cyber_risk_assessment.html" class="text-primary font-medium">Risk Assessment</a>
+                    <a href="automation_roi_calculator.html" class="text-text-secondary hover:text-primary transition-colors">ROI Calculator</a>
+                    <a href="contact_consultation_booking.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
+                    <a href="contact_consultation_booking.html" class="btn-primary w-full text-center mt-4">Book Consultation</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="space-y-6">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-error-100 to-error-200 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-error-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h1 class="text-4xl lg:text-5xl font-bold font-poppins text-text-primary">
+                        Cyber Risk Assessment
+                    </h1>
+                </div>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                    Discover your business's cybersecurity vulnerabilities with our comprehensive 5-question assessment. Get personalized recommendations and a detailed risk report delivered to your inbox.
+                </p>
+                
+                <!-- Trust Indicators -->
+                <div class="flex flex-wrap items-center justify-center gap-6 mt-8">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-sm text-text-secondary">Free Assessment</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="text-sm text-text-secondary">5 Minutes</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-sm text-text-secondary">Instant Results</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Container -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-4xl mx-auto px-6">
+            <!-- Progress Bar -->
+            <div class="mb-12">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-sm font-medium text-text-secondary">Assessment Progress</span>
+                    <span class="text-sm font-medium text-text-secondary" id="progress-text">Question 1 of 5</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-gradient-to-r from-accent to-accent-600 h-3 rounded-full transition-all duration-500 ease-out" id="progress-bar" style="width: 20%"></div>
+                </div>
+            </div>
+
+            <!-- Assessment Questions -->
+            <div id="assessment-container">
+                <!-- Question 1 -->
+                <div class="question-slide active" id="question-1">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold font-poppins text-text-primary mb-4">
+                            Current Security Measures
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            Which of the following security measures does your business currently have in place?
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="answer-card cursor-pointer" data-value="comprehensive">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-success-100 to-success-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-success-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Comprehensive Security</h3>
+                                    <p class="text-text-secondary">Firewall, antivirus, employee training, and regular security audits</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="basic">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-warning-100 to-warning-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-warning-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Basic Protection</h3>
+                                    <p class="text-text-secondary">Basic firewall and antivirus software only</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="minimal">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-error-100 to-error-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-error-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Minimal Security</h3>
+                                    <p class="text-text-secondary">Limited or outdated security measures</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="unsure">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-secondary-100 to-secondary-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-secondary-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Not Sure</h3>
+                                    <p class="text-text-secondary">Uncertain about current security measures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-slide" id="question-2">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold font-poppins text-text-primary mb-4">
+                            Data Backup Practices
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            How frequently does your business backup critical data?
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="answer-card cursor-pointer" data-value="daily">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-success-100 to-success-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-success-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Daily Backups</h3>
+                                    <p class="text-text-secondary">Automated daily backups with cloud storage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="weekly">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-warning-100 to-warning-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-warning-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Weekly Backups</h3>
+                                    <p class="text-text-secondary">Regular weekly backup schedule</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="monthly">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-error-100 to-error-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-error-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Monthly or Less</h3>
+                                    <p class="text-text-secondary">Infrequent or irregular backup schedule</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="none">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-error-100 to-error-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-error-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">No Regular Backups</h3>
+                                    <p class="text-text-secondary">No systematic backup process in place</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-slide" id="question-3">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold font-poppins text-text-primary mb-4">
+                            Employee Security Training
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            How often do your employees receive cybersecurity training?
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="answer-card cursor-pointer" data-value="regular">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-success-100 to-success-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-success-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1L13.5 2.5L16.17 5.17L10.5 10.84L11.92 12.25L15.92 8.25L21 9ZM1 9L3 7L9 13L7 15L1 9ZM13 14L11 16L13 18L15 16L13 14Z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Regular Training</h3>
+                                    <p class="text-text-secondary">Quarterly or bi-annual security awareness training</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="annual">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-warning-100 to-warning-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-warning-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Annual Training</h3>
+                                    <p class="text-text-secondary">Once per year security training sessions</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="onboarding">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-error-100 to-error-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-error-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Onboarding Only</h3>
+                                    <p class="text-text-secondary">Security training only during employee onboarding</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="none">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-error-100 to-error-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-error-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">No Training</h3>
+                                    <p class="text-text-secondary">No formal cybersecurity training program</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-slide" id="question-4">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold font-poppins text-text-primary mb-4">
+                            Incident Response Plan
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            Does your business have a documented cybersecurity incident response plan?
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="answer-card cursor-pointer" data-value="comprehensive">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-success-100 to-success-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-success-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Comprehensive Plan</h3>
+                                    <p class="text-text-secondary">Detailed, tested incident response plan with assigned roles</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="basic">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-warning-100 to-warning-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-warning-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Basic Plan</h3>
+                                    <p class="text-text-secondary">Basic documented procedures but not regularly tested</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="informal">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-error-100 to-error-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-error-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Informal Plan</h3>
+                                    <p class="text-text-secondary">Informal understanding but no documented procedures</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="none">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-error-100 to-error-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-error-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">No Plan</h3>
+                                    <p class="text-text-secondary">No incident response plan in place</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question-slide" id="question-5">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold font-poppins text-text-primary mb-4">
+                            Compliance Requirements
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            Which compliance standards does your business need to meet?
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="answer-card cursor-pointer" data-value="multiple">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-primary-100 to-primary-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-primary-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Multiple Standards</h3>
+                                    <p class="text-text-secondary">HIPAA, PCI DSS, SOX, or other industry-specific requirements</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="single">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-secondary-100 to-secondary-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-secondary-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Single Standard</h3>
+                                    <p class="text-text-secondary">One specific compliance requirement (e.g., GDPR, CCPA)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="general">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-warning-100 to-warning-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-warning-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">General Business</h3>
+                                    <p class="text-text-secondary">Standard business data protection requirements</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="answer-card cursor-pointer" data-value="unsure">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-secondary-100 to-secondary-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-secondary-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold font-poppins text-text-primary mb-2">Not Sure</h3>
+                                    <p class="text-text-secondary">Uncertain about compliance requirements</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information Form -->
+                <div class="question-slide" id="contact-form">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold font-poppins text-text-primary mb-4">
+                            Get Your Personalized Risk Report
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            Enter your contact information to receive your detailed cybersecurity risk assessment and personalized recommendations.
+                        </p>
+                    </div>
+
+                    <div class="max-w-2xl mx-auto">
+                        <form class="space-y-6" id="assessment-form">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-text-primary mb-2">First Name *</label>
+                                    <input type="text" name="firstName" required class="form-input w-full" placeholder="John" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Last Name *</label>
+                                    <input type="text" name="lastName" required class="form-input w-full" placeholder="Smith" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Business Email *</label>
+                                <input type="email" name="email" required class="form-input w-full" placeholder="john@company.com" />
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Company Name *</label>
+                                <input type="text" name="company" required class="form-input w-full" placeholder="Your Company" />
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-text-primary mb-2">Phone Number</label>
+                                <input type="tel" name="phone" class="form-input w-full" placeholder="(555) 123-4567" />
+                            </div>
+
+                            <div class="bg-primary-50 rounded-lg p-6">
+                                <div class="flex items-start space-x-3">
+                                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">What You'll Receive:</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Personalized risk score and analysis</li>
+                                            <li>• Specific vulnerability recommendations</li>
+                                            <li>• Industry best practices guide</li>
+                                            <li>• Free 30-minute consultation offer</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-primary w-full text-lg py-4">
+                                Get My Risk Assessment Report
+                            </button>
+
+                            <p class="text-xs text-text-secondary text-center">
+                                By submitting, you agree to our privacy policy. Your information is 100% confidential and will never be shared.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Results Page -->
+                <div class="question-slide" id="results">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold font-poppins text-text-primary mb-4">
+                            Your Cybersecurity Risk Assessment
+                        </h2>
+                        <p class="text-lg text-text-secondary">
+                            Based on your responses, here's your personalized risk analysis:
+                        </p>
+                    </div>
+
+                    <div class="max-w-3xl mx-auto space-y-8">
+                        <!-- Risk Score -->
+                        <div class="card text-center">
+                            <div class="mb-6">
+                                <div class="w-32 h-32 mx-auto mb-4 relative">
+                                    <svg class="w-32 h-32 transform -rotate-90" viewBox="0 0 120 120">
+                                        <circle cx="60" cy="60" r="50" fill="none" stroke="#e2e8f0" stroke-width="8"/>
+                                        <circle cx="60" cy="60" r="50" fill="none" stroke="#facf39" stroke-width="8" stroke-dasharray="314" stroke-dashoffset="157" id="risk-circle"/>
+                                    </svg>
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <div class="text-center">
+                                            <div class="text-3xl font-bold text-text-primary" id="risk-score">75</div>
+                                            <div class="text-sm text-text-secondary">Risk Score</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-xl font-semibold text-warning" id="risk-level">Moderate Risk</div>
+                            </div>
+                        </div>
+
+                        <!-- Key Findings -->
+                        <div class="card">
+                            <h3 class="text-xl font-semibold font-poppins text-text-primary mb-4">Key Vulnerability Areas</h3>
+                            <div class="space-y-4" id="vulnerability-areas">
+                                <!-- Dynamic content will be inserted here -->
+                            </div>
+                        </div>
+
+                        <!-- Recommendations -->
+                        <div class="card">
+                            <h3 class="text-xl font-semibold font-poppins text-text-primary mb-4">Recommended Next Steps</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <span class="text-xs font-bold text-primary">1</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary">Schedule a Security Consultation</h4>
+                                        <p class="text-text-secondary">Get expert guidance on addressing your specific vulnerabilities</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <span class="text-xs font-bold text-primary">2</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary">Implement Priority Security Measures</h4>
+                                        <p class="text-text-secondary">Focus on the highest-impact security improvements first</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <span class="text-xs font-bold text-primary">3</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary">Establish Ongoing Monitoring</h4>
+                                        <p class="text-text-secondary">Set up continuous security monitoring and regular assessments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Section -->
+                        <div class="text-center space-y-4">
+                            <a href="contact_consultation_booking.html" class="btn-primary text-lg px-8 py-4 mr-4">
+                                Schedule Free Security Consultation
+                            </a>
+                            <a href="services_detail.html" class="btn-secondary text-lg px-8 py-4">
+                                View Our Security Services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-poppins text-text-primary mb-4">
+                    Trusted Security Partner
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Join hundreds of businesses who trust MBACIO with their cybersecurity needs.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-success-100 to-success-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold font-poppins text-text-primary mb-2">Certified Experts</h3>
+                    <p class="text-text-secondary">Our team holds industry-leading security certifications and stays current with emerging threats.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-primary-100 to-primary-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold font-poppins text-text-primary mb-2">Proven Results</h3>
+                    <p class="text-text-secondary">Track record of helping businesses reduce security incidents by 90% or more.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-r from-accent-100 to-accent-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold font-poppins text-text-primary mb-2">24/7 Support</h3>
+                    <p class="text-text-secondary">Round-the-clock monitoring and support to keep your business protected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-r from-accent to-accent-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="text-2xl font-bold font-poppins">
+                            <span class="bg-gradient-to-r from-accent to-accent-600 bg-clip-text text-transparent">MBACIO</span>
+                        </div>
+                    </div>
+                    <p class="text-primary-200">
+                        Transforming mid-market businesses through strategic IT consulting and automation solutions.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-primary-200">Chicago-based • National Reach</p>
+                        <p class="text-primary-200">100% Confidential Consultations</p>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold font-poppins mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services_detail.html" class="text-primary-200 hover:text-accent transition-colors">IT Automation</a></li>
+                        <li><a href="services_detail.html" class="text-primary-200 hover:text-accent transition-colors">ERP & WMS Support</a></li>
+                        <li><a href="services_detail.html" class="text-primary-200 hover:text-accent transition-colors">QuickBooks Optimization</a></li>
+                        <li><a href="services_detail.html" class="text-primary-200 hover:text-accent transition-colors">Vendor Consolidation</a></li>
+                        <li><a href="services_detail.html" class="text-primary-200 hover:text-accent transition-colors">AI Monitoring</a></li>
+                        <li><a href="cyber_risk_assessment.html" class="text-primary-200 hover:text-accent transition-colors">Risk Management</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold font-poppins mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="cyber_risk_assessment.html" class="text-primary-200 hover:text-accent transition-colors">Cyber Risk Assessment</a></li>
+                        <li><a href="automation_roi_calculator.html" class="text-primary-200 hover:text-accent transition-colors">ROI Calculator</a></li>
+                        <li><a href="pricing_comparison.html" class="text-primary-200 hover:text-accent transition-colors">Pricing Guide</a></li>
+                        <li><a href="#" class="text-primary-200 hover:text-accent transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="text-primary-200 hover:text-accent transition-colors">White Papers</a></li>
+                        <li><a href="#" class="text-primary-200 hover:text-accent transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold font-poppins mb-4">Contact</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span class="text-primary-200">Chicago, IL</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span class="text-primary-200">(312) 555-0123</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span class="text-primary-200">hello@mbacio.com</span>
+                        </div>
+                        <div class="pt-4">
+                            <a href="contact_consultation_booking.html" class="btn-primary">
+                                Schedule Consultation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-primary-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-primary-200 text-sm">
+                        © 2025 MBACIO Corporate. All Rights Reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-primary-200 hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-primary-200 hover:text-accent text-sm transition-colors">Terms of Service</a>
+                        <a href="#" class="text-primary-200 hover:text-accent text-sm transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Assessment state management
+        let currentQuestion = 1;
+        const totalQuestions = 5;
+        const answers = {};
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Answer card selection
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.answer-card')) {
+                const card = e.target.closest('.answer-card');
+                const questionSlide = card.closest('.question-slide');
+                const questionId = questionSlide.id;
+                
+                // Remove active state from all cards in this question
+                questionSlide.querySelectorAll('.answer-card').forEach(c => {
+                    c.classList.remove('ring-2', 'ring-accent', 'bg-accent-50');
+                });
+                
+                // Add active state to selected card
+                card.classList.add('ring-2', 'ring-accent', 'bg-accent-50');
+                
+                // Store answer
+                answers[questionId] = card.dataset.value;
+                
+                // Auto-advance after selection
+                setTimeout(() => {
+                    if (currentQuestion <= totalQuestions) {
+                        nextQuestion();
+                    }
+                }, 800);
+            }
+        });
+
+        function nextQuestion() {
+            // Hide current question
+            document.getElementById(`question-${currentQuestion}`).classList.remove('active');
+            
+            currentQuestion++;
+            
+            if (currentQuestion <= totalQuestions) {
+                // Show next question
+                document.getElementById(`question-${currentQuestion}`).classList.add('active');
+                updateProgress();
+            } else {
+                // Show contact form
+                document.getElementById('contact-form').classList.add('active');
+                updateProgress();
+            }
+        }
+
+        function updateProgress() {
+            const progressPercent = (currentQuestion / (totalQuestions + 1)) * 100;
+            document.getElementById('progress-bar').style.width = `${progressPercent}%`;
+            
+            if (currentQuestion <= totalQuestions) {
+                document.getElementById('progress-text').textContent = `Question ${currentQuestion} of ${totalQuestions}`;
+            } else {
+                document.getElementById('progress-text').textContent = 'Contact Information';
+            }
+        }
+
+        // Form submission
+        document.getElementById('assessment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const formData = new FormData(this);
+            const firstName = formData.get('firstName');
+            const lastName = formData.get('lastName');
+            const email = formData.get('email');
+            const company = formData.get('company');
+            
+            if (!firstName || !lastName || !email || !company) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Calculate risk score and show results
+            showResults();
+        });
+
+        function showResults() {
+            // Hide contact form
+            document.getElementById('contact-form').classList.remove('active');
+            
+            // Show results
+            document.getElementById('results').classList.add('active');
+            
+            // Update progress to 100%
+            document.getElementById('progress-bar').style.width = '100%';
+            document.getElementById('progress-text').textContent = 'Assessment Complete';
+            
+            // Calculate risk score based on answers
+            const riskScore = calculateRiskScore();
+            displayResults(riskScore);
+        }
+
+        function calculateRiskScore() {
+            let score = 0;
+            let riskFactors = [];
+            
+            // Question 1: Security measures
+            if (answers['question-1'] === 'comprehensive') score += 20;
+            else if (answers['question-1'] === 'basic') score += 10;
+            else if (answers['question-1'] === 'minimal') score += 5;
+            else {
+                score += 0;
+                riskFactors.push('Inadequate security infrastructure');
+            }
+            
+            // Question 2: Backup practices
+            if (answers['question-2'] === 'daily') score += 20;
+            else if (answers['question-2'] === 'weekly') score += 15;
+            else if (answers['question-2'] === 'monthly') score += 5;
+            else {
+                score += 0;
+                riskFactors.push('Insufficient data backup procedures');
+            }
+            
+            // Question 3: Employee training
+            if (answers['question-3'] === 'regular') score += 20;
+            else if (answers['question-3'] === 'annual') score += 10;
+            else if (answers['question-3'] === 'onboarding') score += 5;
+            else {
+                score += 0;
+                riskFactors.push('Lack of employee security awareness');
+            }
+            
+            // Question 4: Incident response
+            if (answers['question-4'] === 'comprehensive') score += 20;
+            else if (answers['question-4'] === 'basic') score += 10;
+            else if (answers['question-4'] === 'informal') score += 5;
+            else {
+                score += 0;
+                riskFactors.push('No incident response plan');
+            }
+            
+            // Question 5: Compliance
+            if (answers['question-5'] === 'multiple') score += 20;
+            else if (answers['question-5'] === 'single') score += 15;
+            else if (answers['question-5'] === 'general') score += 10;
+            else {
+                score += 5;
+                riskFactors.push('Unclear compliance requirements');
+            }
+            
+            return { score, riskFactors };
+        }
+
+        function displayResults(result) {
+            const { score, riskFactors } = result;
+            
+            // Update risk score display
+            document.getElementById('risk-score').textContent = score;
+            
+            // Update risk level and color
+            let riskLevel, riskColor, strokeDashoffset;
+            if (score >= 80) {
+                riskLevel = 'Low Risk';
+                riskColor = '#38a169';
+                strokeDashoffset = 78; // 75% of circle
+            } else if (score >= 60) {
+                riskLevel = 'Moderate Risk';
+                riskColor = '#d69e2e';
+                strokeDashoffset = 157; // 50% of circle
+            } else {
+                riskLevel = 'High Risk';
+                riskColor = '#e53e3e';
+                strokeDashoffset = 235; // 25% of circle
+            }
+            
+            document.getElementById('risk-level').textContent = riskLevel;
+            document.getElementById('risk-level').className = `text-xl font-semibold ${score >= 80 ? 'text-success' : score >= 60 ? 'text-warning' : 'text-error'}`;
+            
+            // Update circle progress
+            const circle = document.getElementById('risk-circle');
+            circle.style.stroke = riskColor;
+            circle.style.strokeDashoffset = strokeDashoffset;
+            
+            // Display vulnerability areas
+            const vulnerabilityContainer = document.getElementById('vulnerability-areas');
+            vulnerabilityContainer.innerHTML = '';
+            
+            if (riskFactors.length > 0) {
+                riskFactors.forEach(factor => {
+                    const div = document.createElement('div');
+                    div.className = 'flex items-center space-x-3';
+                    div.innerHTML = `
+                        <svg class="w-5 h-5 text-error flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-text-secondary">${factor}</span>
+                    `;
+                    vulnerabilityContainer.appendChild(div);
+                });
+            } else {
+                vulnerabilityContainer.innerHTML = `
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-success flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-text-secondary">Your security posture is strong across all assessed areas</span>
+                    </div>
+                `;
+            }
+        }
+
+        // Initialize assessment
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hide all question slides except the first
+            document.querySelectorAll('.question-slide').forEach((slide, index) => {
+                if (index === 0) {
+                    slide.classList.add('active');
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        });
+
+        // CSS for question transitions
+        const style = document.createElement('style');
+        style.textContent = `
+            .question-slide {
+                display: none;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: all 0.3s ease-out;
+            }
+            
+            .question-slide.active {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            .answer-card {
+                @apply card hover:shadow-large transition-all duration-300 hover:scale-102 border-2 border-transparent;
+            }
+            
+            .answer-card:hover {
+                @apply border-accent-200;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

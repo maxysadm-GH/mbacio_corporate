@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Consulting Services - MBACIO Corporate</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Comprehensive IT consulting services including automation, ERP support, and risk management for mid-market businesses." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmbaciocor9664back.builtwithrocket.new&_v=0.1.2"></script>
+</head>
+<body class="bg-background font-sans">
+    <!-- Fixed Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-surface shadow-soft z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-accent to-accent-600 rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div class="text-2xl font-bold font-poppins">
+                        <span class="bg-gradient-to-r from-accent to-accent-600 bg-clip-text text-transparent">MBACIO</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="services_detail.html" class="text-primary font-medium">Services</a>
+                    <a href="pricing_comparison.html" class="text-text-secondary hover:text-primary transition-colors">Pricing</a>
+                    <a href="cyber_risk_assessment.html" class="text-text-secondary hover:text-primary transition-colors">Risk Assessment</a>
+                    <a href="contact_consultation_booking.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:block">
+                    <a href="contact_consultation_booking.html" class="btn-primary">Book Consultation</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden mt-4 pb-4 border-t border-border" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="services_detail.html" class="text-primary font-medium">Services</a>
+                    <a href="pricing_comparison.html" class="text-text-secondary hover:text-primary transition-colors">Pricing</a>
+                    <a href="cyber_risk_assessment.html" class="text-text-secondary hover:text-primary transition-colors">Risk Assessment</a>
+                    <a href="contact_consultation_booking.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
+                    <a href="contact_consultation_booking.html" class="btn-primary w-full text-center mt-4">Book Consultation</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="pt-24 pb-6 bg-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <nav class="flex items-center space-x-2 text-sm text-text-secondary">
+                <a href="homepage.html" class="hover:text-primary transition-colors">Home</a>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-primary font-medium">Services</span>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span id="current-service">IT Automation</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-8 bg-background">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-8">
+                <!-- Left Sidebar - Service Navigation -->
+                <div class="lg:col-span-3">
+                    <div class="card sticky top-28">
+                        <h3 class="text-lg font-semibold font-poppins text-text-primary mb-4">Our Services</h3>
+                        <nav class="space-y-2">
+                            <button class="service-nav-item w-full text-left p-3 rounded-md bg-primary text-white transition-colors" data-service="automation">
+                                <div class="flex items-center space-x-3">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                    <span>IT Automation</span>
+                                </div>
+                            </button>
+                            <button class="service-nav-item w-full text-left p-3 rounded-md text-text-secondary hover:bg-primary-50 hover:text-primary transition-colors" data-service="erp">
+                                <div class="flex items-center space-x-3">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M4 4h16v2H4V4zm0 4h16v2H4V8zm0 4h16v2H4v-2zm0 4h16v2H4v-2z"/>
+                                    </svg>
+                                    <span>ERP & WMS Support</span>
+                                </div>
+                            </button>
+                            <button class="service-nav-item w-full text-left p-3 rounded-md text-text-secondary hover:bg-primary-50 hover:text-primary transition-colors" data-service="quickbooks">
+                                <div class="flex items-center space-x-3">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                                    </svg>
+                                    <span>QuickBooks Optimization</span>
+                                </div>
+                            </button>
+                            <button class="service-nav-item w-full text-left p-3 rounded-md text-text-secondary hover:bg-primary-50 hover:text-primary transition-colors" data-service="vendor">
+                                <div class="flex items-center space-x-3">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                    <span>Vendor Consolidation</span>
+                                </div>
+                            </button>
+                            <button class="service-nav-item w-full text-left p-3 rounded-md text-text-secondary hover:bg-primary-50 hover:text-primary transition-colors" data-service="ai">
+                                <div class="flex items-center space-x-3">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                    <span>AI Monitoring Solutions</span>
+                                </div>
+                            </button>
+                            <button class="service-nav-item w-full text-left p-3 rounded-md text-text-secondary hover:bg-primary-50 hover:text-primary transition-colors" data-service="risk">
+                                <div class="flex items-center space-x-3">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Risk Management</span>
+                                </div>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="lg:col-span-6">
+                    <!-- Service Content Container -->
+                    <div id="service-content">
+                        <!-- IT Automation Content -->
+                        <div class="service-content active" data-service="automation">
+                            <div class="space-y-8">
+                                <!-- Hero Section -->
+                                <div class="space-y-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-16 h-16 bg-gradient-to-r from-accent-100 to-accent-200 rounded-lg flex items-center justify-center">
+                                            <svg class="w-8 h-8 text-accent-700" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h1 class="text-3xl font-bold font-poppins text-text-primary">IT Automation</h1>
+                                            <p class="text-text-secondary">Streamline operations and reduce manual errors</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="IT Automation Solutions" class="w-full h-64 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                </div>
+
+                                <!-- Problem/Solution Framework -->
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div class="card bg-error-50 border-error-200">
+                                        <h3 class="text-xl font-semibold font-poppins text-error-700 mb-4">The Problem</h3>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Manual processes consuming 40+ hours weekly</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Human errors in data entry and processing</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Inconsistent workflows across departments</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Delayed reporting and decision-making</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card bg-success-50 border-success-200">
+                                        <h3 class="text-xl font-semibold font-poppins text-success-700 mb-4">Our Solution</h3>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Custom automation workflows saving 30+ hours weekly</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>99.9% accuracy in automated processes</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Standardized workflows across all departments</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Real-time reporting and analytics</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Deliverables Checklist -->
+                                <div class="card">
+                                    <h3 class="text-xl font-semibold font-poppins text-text-primary mb-4">What You'll Receive</h3>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div class="space-y-3">
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">Process Assessment Report</span>
+                                            </div>
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">Custom Automation Scripts</span>
+                                            </div>
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">Integration Documentation</span>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-3">
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">Staff Training Materials</span>
+                                            </div>
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">Monitoring Dashboard</span>
+                                            </div>
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">90-Day Support Package</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Timeline -->
+                                <div class="card bg-primary-50">
+                                    <h3 class="text-xl font-semibold font-poppins text-text-primary mb-6">Typical Project Timeline</h3>
+                                    <div class="space-y-4">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">1</div>
+                                            <div>
+                                                <h4 class="font-medium text-text-primary">Discovery & Assessment</h4>
+                                                <p class="text-sm text-text-secondary">Week 1-2: Process mapping and requirements gathering</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">2</div>
+                                            <div>
+                                                <h4 class="font-medium text-text-primary">Development & Testing</h4>
+                                                <p class="text-sm text-text-secondary">Week 3-6: Custom automation development and testing</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">3</div>
+                                            <div>
+                                                <h4 class="font-medium text-text-primary">Deployment & Training</h4>
+                                                <p class="text-sm text-text-secondary">Week 7-8: Implementation and staff training</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Case Study -->
+                                <div class="card border-l-4 border-accent">
+                                    <h3 class="text-xl font-semibold font-poppins text-text-primary mb-4">Success Story</h3>
+                                    <div class="space-y-4">
+                                        <p class="text-text-secondary italic">
+                                            "MBACIO's automation solution reduced our invoice processing time from 8 hours to 30 minutes daily. We've saved over $50,000 annually in labor costs while improving accuracy to 99.9%."
+                                        </p>
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+                                            <div>
+                                                <p class="font-medium text-text-primary">Sarah Johnson</p>
+                                                <p class="text-sm text-text-secondary">CFO, Midwest Manufacturing Co.</p>
+                                            </div>
+                                        </div>
+                                        <div class="grid grid-cols-3 gap-4 pt-4 border-t border-border">
+                                            <div class="text-center">
+                                                <p class="text-2xl font-bold text-accent">95%</p>
+                                                <p class="text-sm text-text-secondary">Time Saved</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="text-2xl font-bold text-success">$50K</p>
+                                                <p class="text-sm text-text-secondary">Annual Savings</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <p class="text-2xl font-bold text-primary">99.9%</p>
+                                                <p class="text-sm text-text-secondary">Accuracy</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ERP Support Content -->
+                        <div class="service-content hidden" data-service="erp">
+                            <div class="space-y-8">
+                                <div class="space-y-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-16 h-16 bg-gradient-to-r from-secondary-100 to-secondary-200 rounded-lg flex items-center justify-center">
+                                            <svg class="w-8 h-8 text-secondary-700" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M4 4h16v2H4V4zm0 4h16v2H4V8zm0 4h16v2H4v-2zm0 4h16v2H4v-2z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h1 class="text-3xl font-bold font-poppins text-text-primary">ERP & WMS Support</h1>
+                                            <p class="text-text-secondary">Optimize your enterprise systems for peak performance</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="ERP System Management" class="w-full h-64 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                </div>
+
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div class="card bg-error-50 border-error-200">
+                                        <h3 class="text-xl font-semibold font-poppins text-error-700 mb-4">Common ERP Challenges</h3>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>System performance degradation over time</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Poor integration with existing systems</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Inadequate user training and adoption</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Lack of ongoing maintenance and updates</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card bg-success-50 border-success-200">
+                                        <h3 class="text-xl font-semibold font-poppins text-success-700 mb-4">Our ERP Solutions</h3>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Performance optimization and tuning</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Seamless third-party integrations</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Comprehensive user training programs</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Proactive monitoring and maintenance</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <h3 class="text-xl font-semibold font-poppins text-text-primary mb-4">ERP Support Deliverables</h3>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div class="space-y-3">
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">System Health Assessment</span>
+                                            </div>
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">Performance Optimization Plan</span>
+                                            </div>
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">Integration Architecture</span>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-3">
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">User Training Curriculum</span>
+                                            </div>
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">Monitoring Dashboard</span>
+                                            </div>
+                                            <div class="flex items-center space-x-3">
+                                                <svg class="w-5 h-5 text-success-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-text-secondary">Ongoing Support Plan</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- QuickBooks Content -->
+                        <div class="service-content hidden" data-service="quickbooks">
+                            <div class="space-y-8">
+                                <div class="space-y-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-16 h-16 bg-gradient-to-r from-success-100 to-success-200 rounded-lg flex items-center justify-center">
+                                            <svg class="w-8 h-8 text-success-700" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h1 class="text-3xl font-bold font-poppins text-text-primary">QuickBooks Optimization</h1>
+                                            <p class="text-text-secondary">Maximize your accounting system's potential</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img src="https://images.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg" alt="QuickBooks Optimization" class="w-full h-64 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                </div>
+
+                                <div class="card bg-warning-50 border-warning-200">
+                                    <h3 class="text-xl font-semibold font-poppins text-warning-700 mb-4">QuickBooks Optimization Services</h3>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-warning-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Chart of Accounts restructuring</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-warning-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Custom reporting solutions</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-warning-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Third-party app integrations</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-warning-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Automated workflow setup</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-warning-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Data cleanup and migration</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-warning-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>User training and certification</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vendor Consolidation Content -->
+                        <div class="service-content hidden" data-service="vendor">
+                            <div class="space-y-8">
+                                <div class="space-y-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-16 h-16 bg-gradient-to-r from-warning-100 to-warning-200 rounded-lg flex items-center justify-center">
+                                            <svg class="w-8 h-8 text-warning-700" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h1 class="text-3xl font-bold font-poppins text-text-primary">Vendor Consolidation</h1>
+                                            <p class="text-text-secondary">Simplify your IT landscape and reduce costs</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vendor Management" class="w-full h-64 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg'; this.onerror=null;" />
+                                </div>
+
+                                <div class="card bg-primary-50 border-primary-200">
+                                    <h3 class="text-xl font-semibold font-poppins text-primary-700 mb-4">Consolidation Benefits</h3>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Reduced management overhead</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Improved service consistency</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Better negotiating power</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Streamlined communication</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Cost savings up to 30%</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-primary-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Simplified billing and contracts</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI Monitoring Content -->
+                        <div class="service-content hidden" data-service="ai">
+                            <div class="space-y-8">
+                                <div class="space-y-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-16 h-16 bg-gradient-to-r from-primary-100 to-primary-200 rounded-lg flex items-center justify-center">
+                                            <svg class="w-8 h-8 text-primary-700" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h1 class="text-3xl font-bold font-poppins text-text-primary">AI Monitoring Solutions</h1>
+                                            <p class="text-text-secondary">Predict and prevent issues before they occur</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="AI Monitoring Dashboard" class="w-full h-64 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                </div>
+
+                                <div class="card bg-accent-50 border-accent-200">
+                                    <h3 class="text-xl font-semibold font-poppins text-accent-700 mb-4">AI-Powered Features</h3>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-accent-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Predictive failure analysis</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-accent-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Anomaly detection</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-accent-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Automated alerting</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-accent-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Performance optimization</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-accent-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Intelligent reporting</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-accent-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Self-healing systems</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Risk Management Content -->
+                        <div class="service-content hidden" data-service="risk">
+                            <div class="space-y-8">
+                                <div class="space-y-6">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-16 h-16 bg-gradient-to-r from-error-100 to-error-200 rounded-lg flex items-center justify-center">
+                                            <svg class="w-8 h-8 text-error-700" fill="currentColor" viewBox="0 0 24 24">
+                                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h1 class="text-3xl font-bold font-poppins text-text-primary">Risk Management</h1>
+                                            <p class="text-text-secondary">Protect your business from IT threats</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img src="https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Cybersecurity Risk Management" class="w-full h-64 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                </div>
+
+                                <div class="card bg-error-50 border-error-200">
+                                    <h3 class="text-xl font-semibold font-poppins text-error-700 mb-4">Risk Assessment Areas</h3>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Cybersecurity vulnerabilities</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Data protection compliance</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Business continuity planning</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Disaster recovery strategies</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Employee security training</span>
+                                            </li>
+                                            <li class="flex items-start space-x-2">
+                                                <svg class="w-5 h-5 text-error-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span>Incident response procedures</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <a href="cyber_risk_assessment.html" class="btn-primary text-lg px-8 py-4">
+                                        Take Free Risk Assessment
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Calculator Widget -->
+                    <div class="card mt-12 bg-gradient-to-br from-primary-50 to-secondary-50">
+                        <h3 class="text-2xl font-semibold font-poppins text-text-primary mb-6">Project Scope Calculator</h3>
+                        <form class="space-y-6" id="pricing-calculator">
+                            <div class="grid md:grid-cols-3 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Company Size</label>
+                                    <select name="companySize" class="form-input w-full">
+                                        <option value>Select Size</option>
+                                        <option value="small">Small (10-50 employees)</option>
+                                        <option value="medium">Medium (51-200 employees)</option>
+                                        <option value="large">Large (200+ employees)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Project Complexity</label>
+                                    <select name="complexity" class="form-input w-full">
+                                        <option value>Select Complexity</option>
+                                        <option value="basic">Basic Implementation</option>
+                                        <option value="standard">Standard Integration</option>
+                                        <option value="advanced">Advanced Customization</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-text-primary mb-2">Timeline</label>
+                                    <select name="timeline" class="form-input w-full">
+                                        <option value>Select Timeline</option>
+                                        <option value="rush">Rush (2-4 weeks)</option>
+                                        <option value="standard">Standard (6-8 weeks)</option>
+                                        <option value="extended">Extended (10-12 weeks)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn-primary" onclick="calculateEstimate()">
+                                    Get Project Estimate
+                                </button>
+                            </div>
+                            <div id="estimate-result" class="hidden bg-accent-50 border border-accent-200 rounded-lg p-6 text-center">
+                                <h4 class="text-xl font-semibold text-accent-700 mb-2">Estimated Project Range</h4>
+                                <p class="text-3xl font-bold text-primary" id="estimate-range">$15,000 - $25,000</p>
+                                <p class="text-sm text-text-secondary mt-2">*Final pricing depends on specific requirements and scope</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="lg:col-span-3">
+                    <div class="space-y-6">
+                        <!-- Consultation Widget -->
+                        <div class="card sticky top-28">
+                            <h3 class="text-lg font-semibold font-poppins text-text-primary mb-4">Ready to Get Started?</h3>
+                            <p class="text-text-secondary mb-6">Schedule a free consultation to discuss your specific needs and get a custom solution.</p>
+                            <a href="contact_consultation_booking.html" class="btn-primary w-full text-center mb-4">
+                                Book Free Consultation
+                            </a>
+                            <div class="text-center">
+                                <p class="text-sm text-text-secondary">Or call us directly:</p>
+                                <p class="font-semibold text-primary">(312) 555-0123</p>
+                            </div>
+                        </div>
+
+                        <!-- Related Services -->
+                        <div class="card">
+                            <h3 class="text-lg font-semibold font-poppins text-text-primary mb-4">Related Services</h3>
+                            <div class="space-y-3">
+                                <a href="#" class="block p-3 rounded-md bg-primary-50 hover:bg-primary-100 transition-colors">
+                                    <h4 class="font-medium text-primary">Risk Assessment</h4>
+                                    <p class="text-sm text-text-secondary">Identify potential vulnerabilities</p>
+                                </a>
+                                <a href="automation_roi_calculator.html" class="block p-3 rounded-md bg-success-50 hover:bg-success-100 transition-colors">
+                                    <h4 class="font-medium text-success-700">ROI Calculator</h4>
+                                    <p class="text-sm text-text-secondary">Calculate automation savings</p>
+                                </a>
+                                <a href="pricing_comparison.html" class="block p-3 rounded-md bg-accent-50 hover:bg-accent-100 transition-colors">
+                                    <h4 class="font-medium text-accent-700">Pricing Guide</h4>
+                                    <p class="text-sm text-text-secondary">Compare service packages</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Downloadable Resources -->
+                        <div class="card">
+                            <h3 class="text-lg font-semibold font-poppins text-text-primary mb-4">Free Resources</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                                    <div>
+                                        <h4 class="font-medium text-text-primary">IT Automation Checklist</h4>
+                                        <p class="text-sm text-text-secondary">PDF Guide</p>
+                                    </div>
+                                    <button class="text-accent hover:text-accent-700">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                                    <div>
+                                        <h4 class="font-medium text-text-primary">ERP Best Practices</h4>
+                                        <p class="text-sm text-text-secondary">White Paper</p>
+                                    </div>
+                                    <button class="text-accent hover:text-accent-700">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-md">
+                                    <div>
+                                        <h4 class="font-medium text-text-primary">Security Assessment Template</h4>
+                                        <p class="text-sm text-text-secondary">Excel Template</p>
+                                    </div>
+                                    <button class="text-accent hover:text-accent-700">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-r from-accent to-accent-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="text-2xl font-bold font-poppins">
+                            <span class="bg-gradient-to-r from-accent to-accent-600 bg-clip-text text-transparent">MBACIO</span>
+                        </div>
+                    </div>
+                    <p class="text-primary-200">
+                        Transforming mid-market businesses through strategic IT consulting and automation solutions.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-primary-200">Chicago-based • National Reach</p>
+                        <p class="text-primary-200">100% Confidential Consultations</p>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold font-poppins mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services_detail.html" class="text-primary-200 hover:text-accent transition-colors">IT Automation</a></li>
+                        <li><a href="services_detail.html" class="text-primary-200 hover:text-accent transition-colors">ERP & WMS Support</a></li>
+                        <li><a href="services_detail.html" class="text-primary-200 hover:text-accent transition-colors">QuickBooks Optimization</a></li>
+                        <li><a href="services_detail.html" class="text-primary-200 hover:text-accent transition-colors">Vendor Consolidation</a></li>
+                        <li><a href="services_detail.html" class="text-primary-200 hover:text-accent transition-colors">AI Monitoring</a></li>
+                        <li><a href="cyber_risk_assessment.html" class="text-primary-200 hover:text-accent transition-colors">Risk Management</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold font-poppins mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="cyber_risk_assessment.html" class="text-primary-200 hover:text-accent transition-colors">Cyber Risk Assessment</a></li>
+                        <li><a href="automation_roi_calculator.html" class="text-primary-200 hover:text-accent transition-colors">ROI Calculator</a></li>
+                        <li><a href="pricing_comparison.html" class="text-primary-200 hover:text-accent transition-colors">Pricing Guide</a></li>
+                        <li><a href="#" class="text-primary-200 hover:text-accent transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="text-primary-200 hover:text-accent transition-colors">White Papers</a></li>
+                        <li><a href="#" class="text-primary-200 hover:text-accent transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold font-poppins mb-4">Contact</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span class="text-primary-200">Chicago, IL</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span class="text-primary-200">(312) 555-0123</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span class="text-primary-200">hello@mbacio.com</span>
+                        </div>
+                        <div class="pt-4">
+                            <a href="contact_consultation_booking.html" class="btn-primary">
+                                Schedule Consultation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-primary-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-primary-200 text-sm">
+                        © 2025 MBACIO Corporate. All Rights Reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-primary-200 hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-primary-200 hover:text-accent text-sm transition-colors">Terms of Service</a>
+                        <a href="#" class="text-primary-200 hover:text-accent text-sm transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Service navigation functionality
+        const serviceNavItems = document.querySelectorAll('.service-nav-item');
+        const serviceContents = document.querySelectorAll('.service-content');
+        const currentServiceSpan = document.getElementById('current-service');
+
+        const serviceNames = {
+            'automation': 'IT Automation',
+            'erp': 'ERP & WMS Support',
+            'quickbooks': 'QuickBooks Optimization',
+            'vendor': 'Vendor Consolidation',
+            'ai': 'AI Monitoring Solutions',
+            'risk': 'Risk Management'
+        };
+
+        serviceNavItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const serviceType = this.getAttribute('data-service');
+                
+                // Update navigation active state
+                serviceNavItems.forEach(nav => {
+                    nav.classList.remove('bg-primary', 'text-white');
+                    nav.classList.add('text-text-secondary', 'hover:bg-primary-50', 'hover:text-primary');
+                });
+                this.classList.add('bg-primary', 'text-white');
+                this.classList.remove('text-text-secondary', 'hover:bg-primary-50', 'hover:text-primary');
+                
+                // Update content visibility
+                serviceContents.forEach(content => {
+                    content.classList.add('hidden');
+                    content.classList.remove('active');
+                });
+                
+                const targetContent = document.querySelector(`[data-service="${serviceType}"]`);
+                if (targetContent && targetContent.classList.contains('service-content')) {
+                    targetContent.classList.remove('hidden');
+                    targetContent.classList.add('active');
+                }
+                
+                // Update breadcrumb
+                currentServiceSpan.textContent = serviceNames[serviceType] || 'Service';
+                
+                // Scroll to top of content
+                document.getElementById('service-content').scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'start' 
+                });
+            });
+        });
+
+        // Pricing calculator functionality
+        function calculateEstimate() {
+            const form = document.getElementById('pricing-calculator');
+            const formData = new FormData(form);
+            const companySize = formData.get('companySize');
+            const complexity = formData.get('complexity');
+            const timeline = formData.get('timeline');
+            
+            if (!companySize || !complexity || !timeline) {
+                alert('Please fill in all fields to get an estimate.');
+                return;
+            }
+            
+            // Simple pricing calculation logic
+            let basePrice = 10000;
+            
+            // Company size multiplier
+            const sizeMultipliers = {
+                'small': 1.0,
+                'medium': 1.5,
+                'large': 2.0
+            };
+            
+            // Complexity multiplier
+            const complexityMultipliers = {
+                'basic': 1.0,
+                'standard': 1.3,
+                'advanced': 1.8
+            };
+            
+            // Timeline multiplier
+            const timelineMultipliers = {
+                'rush': 1.5,
+                'standard': 1.0,
+                'extended': 0.9
+            };
+            
+            const totalMultiplier = sizeMultipliers[companySize] * 
+                                  complexityMultipliers[complexity] * 
+                                  timelineMultipliers[timeline];
+            
+            const estimatedPrice = Math.round(basePrice * totalMultiplier);
+            const rangeMin = Math.round(estimatedPrice * 0.8);
+            const rangeMax = Math.round(estimatedPrice * 1.2);
+            
+            // Display result
+            const resultDiv = document.getElementById('estimate-result');
+            const rangeSpan = document.getElementById('estimate-range');
+            
+            rangeSpan.textContent = `$${rangeMin.toLocaleString()} - $${rangeMax.toLocaleString()}`;
+            resultDiv.classList.remove('hidden');
+            
+            // Scroll to result
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-surface/95', 'backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-surface/95', 'backdrop-blur-sm');
+            }
+        });
+
+        // Resource download tracking (placeholder)
+        document.querySelectorAll('[data-resource]').forEach(button => {
+            button.addEventListener('click', function() {
+                const resourceName = this.getAttribute('data-resource');
+                // In a real implementation, this would trigger a download
+                alert(`Downloading ${resourceName}... (This is a demo)`);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
